@@ -50,6 +50,7 @@ class SanPhamController extends Controller
     }
     public function destroy($id)
     {
+        $hello=2;
         $data = SanPham::where('id', $id);
         if ($data) {
             $data->delete();
